@@ -1,0 +1,10 @@
+#icwebapp
+services:
+  {{ icwebapp_name }}:
+    image: {{ icwebapp_image }}
+    container_name: {{ icwebapp_name }}
+    ports:
+      - {{ icwebapp_host_port }}:8080
+    environment:
+      - "ODOO_URL=http://100.27.215.54:8069"
+      - "PGADMIN_URL=http://100.27.215.54:80"
