@@ -7,7 +7,7 @@ pipeline {
         IMAGE_TAG="1.0"
         PORT_APP= "8080"
         PORT_HOST= "8081"
-        DOCKERHUB_USERNAME= "ulrichsteve"
+        DOCKERHUB_USERNAME= "abou67"
         DOCKERHUB_PASSWORD= credentials('dockerhub_password')
     }
     stages {
